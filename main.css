@@ -1,0 +1,48 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+html,
+body,
+.map {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    color: #222;
+    font-size: 18px;
+    font-family: 'FuturaLight', 'Helvetica', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    /*max-width: 960px;*/
+    height: 100%;
+    margin: 0 auto;
+}
+
+.map {
+    display: inline-block;
+    max-width: 800px;
+}
+
+.tools {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.things li {
+    cursor: pointer;
+    padding: 0.2em;
+    border: 1px solid #ddd;
+}
+
+.things li:hover,
+.things li:focus {
+    background-color: #ddd;
+}
