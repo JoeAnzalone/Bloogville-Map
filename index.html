@@ -8,11 +8,13 @@
     <div class="page">
         <div id="map" class="map" data-points="data.json"></div>
 
-        <div class="tools">
-            <ul class="things">
-            </ul>
-
-            <textarea class="json" name="json" id="json" cols="30" rows="10"></textarea>
+        <div class="tools" id="tools">
+            <details>
+                <summary>Items</summary>
+                <ul class="things">
+                </ul>
+                <textarea class="json" name="json" id="json" cols="30" rows="10"></textarea>
+            </details>
         </div>
 
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">

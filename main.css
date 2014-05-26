@@ -9,7 +9,6 @@ body,
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 100%;
 }
 
 body {
@@ -21,19 +20,31 @@ body {
 }
 
 .page {
-    /*max-width: 960px;*/
     height: 100%;
     margin: 0 auto;
 }
 
 .map {
-    display: inline-block;
-    max-width: 800px;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .tools {
-    display: inline-block;
-    vertical-align: top;
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    max-height: 100%;
+    overflow: auto;
+}
+
+.things {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 100%;
 }
 
 .things li {
@@ -45,4 +56,17 @@ body {
 .things li:hover,
 .things li:focus {
     background-color: #ddd;
+}
+
+summary {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+details {
+    padding: 0.2em;
+    height: 100%;
 }
